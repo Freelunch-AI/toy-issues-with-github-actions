@@ -15,5 +15,6 @@ jobs:
     with:
       gh_repo: ${{ github.repository }}
       issue_number: ${{ github.event.issue.number }}
+      repository_name: ${{ github.repository }}
     secrets:
       PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
