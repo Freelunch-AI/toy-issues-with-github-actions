@@ -1,0 +1,19 @@
+name: Resolve Issue with LLMOps Resolver
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  call-llmops-resolver:
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    if: github.event.label.name == 'assigned-to-llmops-issue-resolver'
+    uses: BrunoScaglione/llmops-issue-resolver/blob/main/.github/actions/llmops-issue-resolver.yml@main
+    with:
+      gh_repo: ${{ github.repository }}
+      issue_number: ${{ github.event.issue.number }}
+    secrets:
+      PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
