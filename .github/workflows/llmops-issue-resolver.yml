@@ -11,7 +11,7 @@ jobs:
       pull-requests: write
       issues: write
     if: github.event.label.name == 'assigned-to-llmops-issue-resolver'
-    uses: BrunoScaglione/llmops-issue-resolver/blob/main/.github/actions/llmops-issue-resolver.yml@main
+    uses: BrunoScaglione/llmops-issue-resolver/blob/main/.github/workflows/llmops-issue-resolver.yml@main
     with:
       gh_repo: ${{ github.repository }}
       issue_number: ${{ github.event.issue.number }}
