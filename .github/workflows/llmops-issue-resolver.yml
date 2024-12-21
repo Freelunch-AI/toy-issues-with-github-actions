@@ -13,7 +13,7 @@ jobs:
       contents: write
       pull-requests: write
       issues: write
-    if: ${{ github.event.label.name }} == 'assigned-to-llmops-issue-resolver'
+    if: ${{ github.event.label.name == 'assigned-to-llmops-issue-resolver' }} 
     uses: 'BrunoScaglione/llmops-issue-resolver/.github/workflows/llmops-issue-resolver.yml@main'
     with:
       issue_number: ${{ github.event.issue.number }}
