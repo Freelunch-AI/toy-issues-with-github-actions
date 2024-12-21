@@ -4,9 +4,6 @@ on:
   issues:
     types: [labeled]
 
-env:
-  PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
-
 jobs:
   call-llmops-resolver:
     permissions:
@@ -18,3 +15,5 @@ jobs:
     with:
       issue_number: ${{ github.event.issue.number }}
       repository_name: ${{ github.repository }}
+    secrets:
+      PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
