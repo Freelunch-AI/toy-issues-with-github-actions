@@ -10,5 +10,14 @@ authors = [
     { name = "Bruno Scaglione", email = "bruno.c.scaglione@gmail.com" }
 ]
 license = {file = "LICENSE"}
-dependencies = []
+dependencies = [
+    "llmops-issue-resolver>=0.1.1",
+]
+
+[[tool.uv.index]]
+url = "https://test.pypi.org/simple/"
+default = true
+
+[[tool.uv.index]]
+url = "https://pypi.org/simple/"
 
