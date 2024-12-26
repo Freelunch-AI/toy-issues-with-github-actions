@@ -16,4 +16,5 @@ jobs:
       issue_number: ${{ github.event.issue.number }}
       repository_name: ${{ github.repository }}
     secrets:
-      PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+      LLMOPS_ISSUE_RESOLVER_APP_ID: ${{ secrets.LLMOPS_ISSUE_RESOLVER_APP_ID }}
+      LLMOPS_ISSUE_RESOLVER_APP_PRIVATE_KEY: ${{ secrets.LLMOPS_ISSUE_RESOLVER_APP_PRIVATE_KEY }}
