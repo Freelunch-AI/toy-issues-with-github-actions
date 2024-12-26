@@ -4,7 +4,7 @@ version = "0.1.0"
 description = """
                 A toy project to demonstrate automatic resolution of LLMOps issues with GitHub Actions.
             """
-requires-python = "==3.9"
+requires-python = "==3.9.0"
 readme = "README.md"
 authors = [
     { name = "Bruno Scaglione", email = "bruno.c.scaglione@gmail.com" }
@@ -12,6 +12,3 @@ authors = [
 license = {file = "LICENSE"}
 dependencies = []
 
-# [build-system]
-# requires = ["hatchling"]
-# build-backend = "hatchling.build"
