@@ -24,14 +24,14 @@ wheels = [
 
 [[package]]
 name = "llmops-issue-resolver"
-version = "0.1.1"
+version = "0.1.4"
 source = { registry = "https://test.pypi.org/simple/" }
 dependencies = [
     { name = "typer" },
 ]
-sdist = { url = "https://test-files.pythonhosted.org/packages/b8/31/8873d94232bb660af218caaa9d46baef3e51b9231022a643a18d00e0cdd9/llmops_issue_resolver-0.1.1.tar.gz", hash = "sha256:06997556f500f0ef6f4eac6f87cd949527782f15a20c06326a8fc1b6d0492508", size = 4281 }
+sdist = { url = "https://test-files.pythonhosted.org/packages/a8/dd/b67870fa1dfe9814d868a529a46ab363e213fe1863d6f961c43e23bfcde0/llmops_issue_resolver-0.1.4.tar.gz", hash = "sha256:5b6ab9bf7fd4449d00925ebd52829b632789bb819eba20630f3a6e7ab5a29bc3", size = 12942409 }
 wheels = [
-    { url = "https://test-files.pythonhosted.org/packages/56/e8/74e2bd946665d886055070d098549297a1884eb9f2ee9dd5288d4b43df56/llmops_issue_resolver-0.1.1-py3-none-any.whl", hash = "sha256:5ebbf0d572a8fe49d4aba7dcd70b331f88fa0748bcfb6579f6c1a9a6578b3daa", size = 3902 },
+    { url = "https://test-files.pythonhosted.org/packages/c8/54/98f65c833695144cc32e2958ef25a5606bb363e7b5ad47f4e62416733c62/llmops_issue_resolver-0.1.4-py3-none-any.whl", hash = "sha256:f390fa4a261c971c75c4e52650c5e6a96a39363fde875a84c06e93ea0bfb0009", size = 4142 },
 ]
 
 [[package]]
