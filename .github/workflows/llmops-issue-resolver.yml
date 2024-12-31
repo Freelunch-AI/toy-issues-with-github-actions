@@ -12,6 +12,8 @@ jobs:
       issues: write
     if: ${{ github.event.label.name == 'assigned-to-llmops-issue-resolver' }} 
     uses: Freelunch-AI/llmops-issue-resolver/.github/workflows/llmops-issue-resolver.yml@main
+    env:
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
     with:
       issue_number: ${{ github.event.issue.number }}
       repository_name: ${{ github.repository }}
