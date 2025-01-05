@@ -7,7 +7,7 @@ from app.services.item_service import ItemService
 from app.utils.auth import get_current_user
 
 router = APIRouter()
-item_service = ItemService()
+item_service = None
 
 @router.post("/", response_model=ItemResponse)
 async def create_item(item: ItemCreate, current_user: str = Depends(get_current_user)):
