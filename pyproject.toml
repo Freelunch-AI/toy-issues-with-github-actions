@@ -22,9 +22,9 @@ dependencies = [
 ]
 
 [[tool.uv.index]]
-url = "https://test.pypi.org/simple/"
-default = true
+url = "https://pypi.org/simple/"
 
 [[tool.uv.index]]
-url = "https://pypi.org/simple/"
+url = "https://test.pypi.org/simple/"
+default = true
 
