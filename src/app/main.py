@@ -6,7 +6,6 @@ from app.routers import items, auth
 app = FastAPI(title="Item Management API")
 
 app.include_router(auth.router, prefix="/auth", tags=["authentication"])
-app.include_router(items.router, prefix="/items", tags=["items"])
 
 @app.get("/")
 async def root():
