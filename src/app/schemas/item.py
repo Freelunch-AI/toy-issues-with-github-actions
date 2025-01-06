@@ -1,7 +1,6 @@
 """Item schemas for request and response models."""
 
 from pydantic import BaseModel, ConfigDict
-from typing import Optional
 
 class ItemBase(BaseModel):
     """Base schema for items."""
